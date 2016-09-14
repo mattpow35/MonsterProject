@@ -10,7 +10,7 @@ public class MonsterController
 	{
 		firstMonster = new MarshmallowMonster("joey",
 				                                    2,
-				                                    0,
+				                                    1,
 				                                    true,
 				                                    2,
 				                                    1,
@@ -23,9 +23,9 @@ public class MonsterController
 		
 		System.out.println("Here is my monster: " + firstMonster);
 		System.out.println("My monster has " + firstMonster.getEyeCount() + " eyes.");
-		if(firstMonster.getEyeCount() < 1)
+		if(firstMonster.getEyeCount() == 1)
 		{
-			System.out.println("HE HAS NO EYES!!!! How can he see???");
+			System.out.println("HE ONLY HAS ONE EYE!! How Scary!!");
 		}
 		
 
