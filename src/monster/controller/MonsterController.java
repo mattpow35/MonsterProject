@@ -22,6 +22,11 @@ public class MonsterController
 	{
 		
 		System.out.println("Here is my monster: " + firstMonster);
+		System.out.println("My monster has " + firstMonster.getEyeCount() + " eyes.");
+		if(firstMonster.getEyeCount() < 1)
+		{
+			System.out.println("HE HAS NO EYES!!!! How can he see???");
+		}
 		
 
 	}
