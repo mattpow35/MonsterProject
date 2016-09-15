@@ -28,6 +28,8 @@ public class MonsterController
 			System.out.println("HE ONLY HAS ONE EYE!! How Scary!!");
 		}
 		
+		System.out.println("He has " + firstMonster.getantennaCount() + " antennas, he uses them to feel around and sense his surroundings.");
+		
 
 	}
 }
