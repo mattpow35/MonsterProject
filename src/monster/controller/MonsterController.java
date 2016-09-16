@@ -17,7 +17,7 @@ public class MonsterController
 				                                    2,
 				                                    1,
 				                                    true,
-				                                    2);
+				                                    2, "I don't know your name");
 		keyboardInput = new Scanner(System.in);
 	}
 
@@ -48,6 +48,11 @@ public class MonsterController
 		}
 		System.out.println(firstMonster);
 		
+		System.out.println("What is your name?");
+		String newuserName = keyboardInput.nextLine();
+		System.out.println("Hello " + newuserName);
+
+		
 		
 		System.out.println("can I change you name?");
 		String nameanswer = keyboardInput.nextLine();
@@ -55,14 +60,27 @@ public class MonsterController
 		if (nameanswer .equalsIgnoreCase("yes"))
 		{
 			System.out.println("your name is now Mr. Derp. ha ha ha");
+			firstMonster.setuserName("Mr. Derp");
+			
+
+			
 			
 		}
 		else
 		{
 			System.out.println("ok then, you are no fun!!!! :(");
+			firstMonster.setuserName(newuserName);
 			
 		}
 		
+		System.out.println("My body is made of candy..... Are you hungry?");
+		String eatMe = keyboardInput.nextLine();
+		
+		if (eatMe .equalsIgnoreCase("yes"))
+		{
+			System.out.println("oh no! please do not eat me! Go find some other food " + firstMonster.getuserName());
+			
+		}
 		
 	}
 

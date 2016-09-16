@@ -11,6 +11,7 @@ public class MarshmallowMonster
 	private int noseCount;
 	private boolean hasSpine;
 	private int legCount;
+	private String userName;
 	
 	public MarshmallowMonster()
 	{
@@ -21,9 +22,10 @@ public class MarshmallowMonster
 		this.armCount = -2315;
 		this.noseCount = -7756;
 		this.hasSpine = false;
+		this.userName = "no name";
 	}
 	
-	public MarshmallowMonster(String name, double antennaCount, int eyeCount, boolean hasBellyButton, int armCount, int noseCount, boolean hasSpine, int legCount)
+	public MarshmallowMonster(String name, double antennaCount, int eyeCount, boolean hasBellyButton, int armCount, int noseCount, boolean hasSpine, int legCount, String userName)
 	{
 		this.name = name;
 		this.antennaCount = antennaCount;
@@ -32,9 +34,9 @@ public class MarshmallowMonster
 		this.armCount = armCount;
 		this.noseCount = noseCount;
 		this.hasSpine = hasSpine;
-		this.legCount = legCount; 
+		this.legCount = legCount;
+		this.userName = userName;
 	}
-	
 	public String toString()
 	{
 		String description = "Name is " + this.name;
@@ -84,6 +86,11 @@ public class MarshmallowMonster
 		return legCount;
 	}
 	
+	public String getuserName()
+	{
+		return userName;
+	}
+	
 	
 	//setters
 	public void setname(String name)
@@ -126,7 +133,10 @@ public class MarshmallowMonster
 		this.legCount = legCount;
 	}
 	
-	
+	public void setuserName(String userName)
+	{
+		this.userName = userName;
+	}
 	
 	
 	
