@@ -43,6 +43,7 @@ public class MarshmallowMonster
 		
 	}
 	
+	//getters
 	public String getname()
 	{
 		return name;
@@ -83,6 +84,47 @@ public class MarshmallowMonster
 		return legCount;
 	}
 	
+	
+	//setters
+	public void setname(String name)
+	{
+		this.name = name;
+	}
+	
+	public void setantennaCount(int antennaCount)
+	{
+		this.antennaCount = antennaCount;
+	}
+	
+	public void seteyeCount(int eyeCount)
+	{
+		this.eyeCount = eyeCount;
+	}
+	
+	public void sethasBellyButton(boolean hasBellyButton)
+	{
+		this.hasBellyButton = hasBellyButton;
+	}
+	
+	public void setarmCount(int armCount)
+	{
+		this.armCount = armCount;
+	}
+	
+	public void setnoseCount(int noseCount)
+	{
+		this.noseCount = noseCount;
+	}
+	
+	public void sethasSpine(boolean hasSpine)
+	{
+		this.hasSpine = hasSpine;
+	}
+	
+	public void setlegCount(int legCount)
+	{
+		this.legCount = legCount;
+	}
 	
 	
 	
