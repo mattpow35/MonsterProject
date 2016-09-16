@@ -44,9 +44,26 @@ public class MonsterController
 		}
 		else
 		{
-			System.out.println("FINE, don't change my name! angry >:/");
+			System.out.println("FINE, don't change my name! >:/");
 		}
 		System.out.println(firstMonster);
+		
+		
+		System.out.println("can I change you name?");
+		String nameanswer = keyboardInput.nextLine();
+		
+		if (nameanswer .equalsIgnoreCase("yes"))
+		{
+			System.out.println("your name is now Mr. Derp. ha ha ha");
+			
+		}
+		else
+		{
+			System.out.println("ok then, you are no fun!!!! :(");
+			
+		}
+		
+		
 	}
 
 	
