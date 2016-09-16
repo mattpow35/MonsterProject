@@ -61,10 +61,7 @@ public class MonsterController
 		{
 			System.out.println("your name is now Mr. Derp. ha ha ha");
 			firstMonster.setuserName("Mr. Derp");
-			
-
-			
-			
+				
 		}
 		else
 		{
@@ -80,6 +77,10 @@ public class MonsterController
 		{
 			System.out.println("oh no! please do not eat me! Go find some other food " + firstMonster.getuserName());
 			
+		}
+		else 
+		{
+			System.out.println("GOOD! I was worried you might eat me. Im glad we are friends " + firstMonster.getuserName() + " :)");
 		}
 		
 	}
