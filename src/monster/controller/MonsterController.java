@@ -26,16 +26,21 @@ public class MonsterController
 		
 		System.out.println("Here is my monster: " + firstMonster);
 		System.out.println("Me has " + firstMonster.geteyeCount() + " eye.");
-//		if (firstMonster.geteyeCount() == 1)
-//		{
-//			System.out.println("--HE ONLY HAS ONE EYE!! How Scary!!--");
-//		}
+
 		
 		System.out.println("Me has " + firstMonster.getantennaCount() + " antennas, me uses them to feel around and sense me surroundings.");
 		
+		monsterDecisions();
+		
+		loopMonster(); //method call
+	}
+	
+	private void monsterDecisions()
+	{
 		System.out.println("Do you want to change me name?");
 		String answer = keyboardInput.nextLine();
 		
+				
 		if (answer .equalsIgnoreCase("yes"))
 		{
 			System.out.println("What do you want my name to be?");
@@ -82,13 +87,10 @@ public class MonsterController
 		{
 			System.out.println("GOOD! I was worried you might eat me. Im glad we are friends " + firstMonster.getuserName() + " :)");
 		}
-		
-		loopMonster(); //method call
 	}
-
 	private void loopMonster()
 	{
-		//define a variable for codition/test
+		//define a variable for condition/test
 		int numberOfTimes = 0;
 
 		while (numberOfTimes < 1000)
