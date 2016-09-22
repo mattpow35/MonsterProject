@@ -10,14 +10,7 @@ public class MonsterController
 	
 	public MonsterController()
 	{
-		firstMonster = new MarshmallowMonster("joey",
-				                                    2,
-				                                    1,
-				                                    true,
-				                                    2,
-				                                    1,
-				                                    true,
-				                                    2, "I don't know your name");
+		firstMonster = new MarshmallowMonster("joey", 2, 1, true, 2, 1, true, 2, "I don't know your name");
 		keyboardInput = new Scanner(System.in);
 	}
 
@@ -78,7 +71,7 @@ public class MonsterController
 		System.out.println("My body is made of candy..... Are you hungry?");
 		String eatMe = keyboardInput.nextLine();
 		
-		if (eatMe .equalsIgnoreCase("yes"))
+		if (eatMe.equalsIgnoreCase("yes"))
 		{
 			System.out.println("oh no! please do not eat me! Go find some other food " + firstMonster.getuserName());
 			
@@ -94,44 +87,41 @@ public class MonsterController
 		int numberOfTimes = 0;
 
 		while (numberOfTimes < 1000)
-		{
-			//code to do
-			System.out.print("First monster words " + firstMonster);
-			//change var
-			numberOfTimes++;
-		}
+			{
+				//code to do
+				System.out.print("First monster words " + firstMonster);
+				//change var
+				numberOfTimes++;
+			}
 		
 		for(int count = 0; count < 1000; count++)
-		{
-			System.out.println("First Monster words " + firstMonster);
-		}
-		
-		
+			{
+				System.out.println("First Monster words " + firstMonster);
+			}
 		
 		
 		
 		int eat = 0;
 		while (eat < 10)
-		{
-			System.out.println("I am eating");
-			eat++;
-			
-		}
+			{
+				System.out.println("I am eating");
+				eat++;
+			}
 			System.out.println("I ate 10 pieces of food.");
 		
 		int height = 1;
 		while (height <= 12)
-		{
-			if (height == 1)
 			{
-				System.out.println("I was " + height + " foot tall when I was " + height + " year old");
-			}
-			else
+				if (height == 1)
 				{
-				System.out.println("I was " + height + " feet tall when I was " + height + " years old");
+					System.out.println("I was " + height + " foot tall when I was " + height + " year old");
 				}
-			height++;
-		}
+				else
+				{
+					System.out.println("I was " + height + " feet tall when I was " + height + " years old");
+				}
+				height++;
+			}
 		System.out.println("Me is now 13 years old and 13 feet tall :)");
 		
 		
