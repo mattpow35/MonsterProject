@@ -83,6 +83,8 @@ public class MonsterController
 	}
 	private void loopMonster()
 	{
+		// while loops
+		
 		//define a variable for condition/test
 		int numberOfTimes = 0;
 
@@ -92,23 +94,7 @@ public class MonsterController
 				System.out.print("First monster words " + firstMonster);
 				//change var
 				numberOfTimes++;
-			}
-		
-		for(int count = 0; count < 1000; count++)
-			{
-				System.out.println("First Monster words " + firstMonster);
-			}
-		
-		
-		
-		int eat = 0;
-		while (eat < 10)
-			{
-				System.out.println("I am eating");
-				eat++;
-			}
-			System.out.println("I ate 10 pieces of food.");
-		
+			}	
 		int height = 1;
 		while (height <= 12)
 			{
@@ -123,6 +109,48 @@ public class MonsterController
 				height++;
 			}
 		System.out.println("Me is now 13 years old and 13 feet tall :)");
+		
+		//for loops
+		for(int i = 1; i <= 5; i++)
+			{
+				double prevplus3 = i + 3;
+				System.out.println(prevplus3);
+			}
+		
+		for(int count = 0; count < 1000; count++)
+			{
+				System.out.println("First Monster words " + firstMonster);
+			}
+	
+	
+	
+		for(int i = 0; i <= 10; i++)
+			{
+				System.out.println("I am eating");
+			}
+			System.out.println("I ate 10 pieces of food.");
+			
+		// for each loops
+			
+		String[] artists = {"boston", "chicago", "ac/dc", "38 special", "queen", "styx", "bruce springsteen", "reo speedwagon"};
+		System.out.println("My favorite 70s/80s music artists are");
+		
+		for (String favartistlist : artists)
+		{
+			System.out.println(favartistlist);
+		}
+		
+		String[] colors = {"blue", "green", "purple"};
+		System.out.println("Favorite colors are:");
+		
+		for (String favcolors : colors)
+		{
+			System.out.println(favcolors);
+		}
+		
+		
+
+		
 		
 		
 		
