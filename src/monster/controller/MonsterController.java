@@ -148,6 +148,16 @@ public class MonsterController
 			System.out.println(favcolors);
 		}
 		
+		//nested loop
+		
+		for (int a = 1; a <= 10; a++)
+		{
+			for(int j = 1; j <= 6; j++)
+			{
+				System.out.println("$");
+			}
+			System.out.println();
+		}
 		
 
 		
